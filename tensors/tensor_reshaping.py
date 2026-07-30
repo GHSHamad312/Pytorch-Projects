@@ -1,4 +1,3 @@
-from sympy import flatten
 import torch
 # generatin sequence of numbers
 sequencial=torch.arange(start=1, end=25)
