@@ -43,4 +43,7 @@ for epoch in range(200):
     if epoch%20 == 0:
         print(f'epoch : {epoch:3d} : loss: {loss.item()}')
 
-
+torch.save(
+    model.state_dict(),
+    "reg_model.pth"
+)
