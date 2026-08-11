@@ -53,4 +53,5 @@ for epoch in range (200):
         print(f'epoch:{epoch:3d}: Loss: {loss}')
 
 prediction=model(torch.tensor([2.5,65,95,6.0]))
-print(prediction)
+softmax=nn.Softmax()
+print(softmax(prediction))
