@@ -1,20 +1,71 @@
-# Python virtual environment
+# Virtual Environments
 venv/
 .venv/
 env/
 ENV/
+env.bak/
+venv.bak/
 
-# Byte-compiled / optimized files
+# Byte-compiled / Python cache files
 __pycache__/
 *.py[cod]
 *$py.class
+*.so
 
-# IDE and Editor files
+# Jupyter Notebook Checkpoints & Cache
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.ipython/
+
+# Datasets & Downloads
+data/
+**/data/
+*.tar.gz
+*.zip
+*.gz
+*.bz2
+*.xz
+*.csv
+*.parquet
+cifar-10-batches-py/
+
+# Model Checkpoints & Saved Weights
+*.pt
+*.pth
+*.onnx
+*.bin
+*.h5
+*.hdf5
+*.ckpt
+*.safetensors
+
+# Logs, Metrics & Visualizations
+runs/
+tb_logs/
+wandb/
+.wandb/
+*.log
+
+# IDE & Editor Files
 .vscode/
 .idea/
 *.swp
 *.swo
+*.sublime-project
+*.sublime-workspace
+.project
+.pydevproject
 
-# OS generated files
+# OS Generated Files
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
+
+# Environment Variables
+.env
+.env.local
+.env.*.local
