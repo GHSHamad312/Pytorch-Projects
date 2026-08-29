@@ -17,27 +17,19 @@ __pycache__/
 */.ipynb_checkpoints/*
 .ipython/
 
-# Datasets & Downloads
+# Large Datasets & Archives
 data/
 **/data/
+Data/
+**/Data/
 *.tar.gz
 *.zip
 *.gz
 *.bz2
 *.xz
-*.csv
 *.parquet
 cifar-10-batches-py/
-
-# Model Checkpoints & Saved Weights
-*.pt
-*.pth
-*.onnx
-*.bin
-*.h5
-*.hdf5
-*.ckpt
-*.safetensors
+**/cifar-10-batches-py/
 
 # Logs, Metrics & Visualizations
 runs/

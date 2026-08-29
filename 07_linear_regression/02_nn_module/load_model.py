@@ -14,9 +14,11 @@ class Model(nn.Module):
         x=self.layer2(x)
         return x
 
-model=Model()
+import os
 
-model.load_state_dict(torch.load("./linier_regression_model/reg_model.pth"))
+model = Model()
+model_path = os.path.join(os.path.dirname(__file__), "reg_model.pth")
+model.load_state_dict(torch.load(model_path, weights_only=True))
 
 model.eval()
 
